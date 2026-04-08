@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Seating</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card" id="login-section">
+        <h2>Adhi College</h2>
+        <p class="subtitle">Exam Seat Allotment</p>
+        <input type="text" id="rollNo" placeholder="Enter Roll Number" autocomplete="off">
+        <button onclick="checkSeat()">Find My Seats</button>
+        <p id="error-msg" class="error"></p>
+    </div>
+
+    <div class="card hidden result-card" id="result-section">
+        
+        <h3 class="section-title">Student Profile</h3>
+        <div class="profile-details">
+            <p><strong>Name:</strong> <span id="s-name"></span></p>
+            <p><strong>Roll No:</strong> <span id="s-roll"></span></p>
+            <p><strong>Dept & Batch:</strong> <span id="s-dept"></span> - <span id="s-batch"></span></p>
+            <p><strong>Gender:</strong> <span id="s-gender"></span></p>
+        </div>
+
+        <h3 class="section-title">Exam Schedule</h3>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Hall</th>
+                        <th>Seat</th>
+                    </tr>
+                </thead>
+                <tbody id="exam-tbody">
+                    </tbody>
+            </table>
+        </div>
+
+        <button class="back-btn" onclick="goBack()">Back to Login</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

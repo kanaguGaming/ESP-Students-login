@@ -1,0 +1,109 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eef2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.result-card {
+    max-width: 500px;
+}
+
+.hidden { display: none !important; }
+
+h2 { margin-top: 0; color: #222; }
+.subtitle { color: #666; margin-top: -10px; margin-bottom: 20px; }
+
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 15px 0;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+button:hover { background-color: #004c99; }
+
+.back-btn { background-color: #555; margin-top: 25px; }
+.back-btn:hover { background-color: #333; }
+
+.error { font-size: 14px; font-weight: bold; margin-top: 10px;}
+
+/* Profile Info Styling */
+.section-title {
+    text-align: left;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 5px;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.profile-details {
+    text-align: left;
+    background: #f8fbff;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #0066cc;
+}
+
+.profile-details p { margin: 6px 0; font-size: 14px; color: #444; }
+
+/* Table Styling */
+.table-container {
+    overflow-x: auto;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+th {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.seat-text {
+    font-weight: bold;
+    color: #d9534f;
+    font-size: 16px;
+}
